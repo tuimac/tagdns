@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$LOG='/root/development.log'
+LOG='/root/development.log'
 
 while true; do
     cat /sys/class/net >> $LOG 2>&1

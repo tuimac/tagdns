@@ -13,6 +13,7 @@ RUN apk update && \
     mkdir /etc/vim/backup && \
     mkdir /etc/vim/undo && \
     pip3 install -r requirements.txt && \
+    rm requirements.txt && \
  	rm /etc/vim/vimrc && \
     curl -L https://raw.githubusercontent.com/tuimac/tools/master/vim/vimrc -o /etc/vim/vimrc && \
     curl -L https://raw.githubusercontent.com/tuimac/tools/master/linux/bashrc/.bashrc_node_docker -o /root/.bashrc && \
